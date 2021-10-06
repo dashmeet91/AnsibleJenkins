@@ -1,5 +1,7 @@
 - name : copy files
   hosts : all
+  become : true
+  remote_user : centos
   tasks :
    - name : copy files
      yum :
