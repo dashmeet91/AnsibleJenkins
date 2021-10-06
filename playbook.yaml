@@ -2,6 +2,6 @@
   hosts : all
   tasks :
    - name : copy files
-     copy :
-      src : abc.txt
-      dest : /home/centos/
+     yum :
+      name : wget
+      state : installed
