@@ -1,0 +1,7 @@
+- name : copy files
+  hosts : all
+  tasks :
+   - name : copy files
+     copy :
+      src : abc.txt
+      dest : /home/centos/
